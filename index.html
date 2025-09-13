@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="toggleTheme()" 
+    onmouseover="this.style.color='white';this.innerText='Light Mode';"
+    onmouseout="this.style.color='white';this.innerText='Dark Mode';">Dark Mode</button>
+    <h1>Wildlife tour Held on 9th October 2025</h1>
+    <p id="p1">This should be filled by every club member that attended the Wildlife tour for record purposes</p>
+    <div id="wildlife">
+        <img src="images/img-1.jpg" alt="Wildlife Image" id="wildlifeImage">
+        <hr>
+        <button onclick="previousImage()">Previous</button>
+        <button onclick="nextImage()">Next</button>
+    </div>
+
+    <!-- Form Validation -->
+    <h2>Wildlife Sighting Form</h2>
+    <form id="wildlifeForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span id="nameError" class="error"></span>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error"></span>
+        <br><br>
+
+        <label for="species">Species Spotted:</label>
+        <textarea name="species" id="species" cols="30" rows="7" placeholder="Input names of species seen"></textarea>
+        <span id="speciesError" class="error"></span>
+        <br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <span id="commentsError" class="error"></span>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
